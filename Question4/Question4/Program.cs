@@ -12,7 +12,7 @@ namespace Question4
             int flag = 0;
             do
             {
-                Console.WriteLine("Player1:X and Player2:O");
+                Console.WriteLine("Player1:O and Player2:X");
                 if (player % 2 == 0)
                 { 
                     Console.WriteLine("2nd Player now");
@@ -23,16 +23,16 @@ namespace Question4
                 }
                 game.SetBoardofGame();
                 int choice = Convert.ToInt32(Console.ReadLine());
-                if (arr[choice] != 'X' && arr[choice] != 'O')
+                if (arr[choice] != 'O' && arr[choice] != 'X')
                 {
                     if (player % 2 == 0) 
                     {
-                        arr[choice] = 'O';
+                        arr[choice] = 'X';
                         player++;
                     }
                     else
                     {
-                        arr[choice] = 'X';
+                        arr[choice] = 'O';
                         player++;
                     }
                 }
